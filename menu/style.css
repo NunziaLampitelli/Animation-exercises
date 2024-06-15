@@ -12,8 +12,9 @@ nav {
     padding-top: 7rem;
     a {color: white;
       text-decoration: none;
-      a:visited {text-decoration: none;};
+      a:visited {text-decoration: none;};   
       }
+      
     aside {
         position:absolute;
         min-width: 2erm;
@@ -34,6 +35,11 @@ nav {
         font-size: small;}
   }
 }
+article:hover {
+  transform: translateX(2rem);
+  transition-duration: 1s;
+}
+
 nav.open {
     background-color: rgb(50, 50, 50);
     }
