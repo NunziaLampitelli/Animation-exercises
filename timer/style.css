@@ -1,0 +1,47 @@
+html {
+	min-width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+}
+
+body {
+	background-color: #eeeeee;
+	display: flex;
+	justify-content: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 12rem;
+	border: solid 5px grey;
+	border-radius: 50%;
+	background-color: white;
+	width: 15rem;
+	height: 15rem;
+}
+
+.s {
+	border-radius: 15px;
+	width: 0.3rem;
+	height: 4rem;
+	background-color: darkred;
+}
+.ms {
+	position: absolute;
+	border-radius: 15px;
+	background-color: black;
+	width: 6rem;
+	height: 0.3rem;
+	margin-left: 6.5rem;
+	margin-top: 0.2;
+}
+.dot {
+	margin-bottom: 4rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: grey;
+	border-radius: 50%;
+}
