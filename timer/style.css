@@ -29,16 +29,16 @@ main {
 	height: 4rem;
   margin-bottom: 4rem;
 	background-color: darkred;
-  animation: five_minutes 3600s linear;
+  animation: seconds 300s linear;
 }
 .ms {
 	position: absolute;
 	border-radius: 15px;
 	background-color: black;
-	width: 6rem;
-	height: 0.35rem;
-	margin-left: 6rem;
-	margin-top: 0.2;
+	width: 0.35rem;
+	height: 6rem;
+	margin-left: 0.1rem;
+	margin-bottom: 5.7rem;
   animation: seconds 60s linear;
   animation-iteration-count: 5;
 }
@@ -50,11 +50,6 @@ main {
 }
 
 @keyframes seconds {
-  from {transform-origin: center left; transform: rotate(0deg);}
-  to {transform-origin: center left; transform: rotate(360deg);}
-}
-
-@keyframes five_minutes {
   from {transform-origin: center bottom; transform: rotate(0deg);}
   to {transform-origin: center bottom; transform: rotate(360deg);}
 }
