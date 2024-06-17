@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+ box-shadow: 1px 70px 400px 95px rgba(0,0,0,1) inset;
+ min-height: 100vh;
+ min-width: 100vw;
+}
+
+
 body {
+  background-image: url('jack-b-bOfCH9TnRg4-unsplash.jpg');
   display: flex;
   justify-content: center;
   background-color: rgb(33, 32, 32);
   overflow: hidden;
   font-family: 'Roboto', 'Arial', 'Verdana';
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: bold;
   line-height: 1.5em;
   color: rgb(225, 199, 28);
-  margin: -100%, 0, 0, 0;
+  margin: 50%, 0, 0, 0; 
 }
 
 .container {
@@ -18,20 +26,19 @@ body {
   perspective: 450px;
   display: flex;
   text-align: justify;
-  width: 60%;
-  height: 100%;
+  width: 80vw;
+  height: 100vh;
   h1, .episode {
     text-align: center;
   }
-  img {min-width: 60vw;}
+  img {min-width: 80vw;}
 }
 .text {
   position: relative;
-  animation: scrolling 50s linear forwards;
-  transform: translateZ(-2500px);
+  animation: scrolling 50s linear;
 }
 
 @keyframes scrolling {
-  from {transform: translateY(0px) rotateX(7deg)}
-  to {transform: translateY(-7500px) rotateX(7deg)};
+  from {transform: translateY(0px) translateZ(0px) rotateX(15deg) scale(1)}
+  to {transform: translateY(-2500px) translateZ(-500px) rotateX(10deg) scale(1.1)};
 }
