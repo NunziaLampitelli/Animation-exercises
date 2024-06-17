@@ -8,6 +8,7 @@ html {
 
 
 body {
+  width: 100vw;
   background-image: url('jack-b-bOfCH9TnRg4-unsplash.jpg');
   display: flex;
   justify-content: center;
@@ -25,20 +26,24 @@ body {
   margin-top: 100vh;
   perspective: 450px;
   display: flex;
+  flex-direction: column;
   text-align: justify;
-  width: 80vw;
+  min-width: 80vw;
   height: 100vh;
   h1, .episode {
     text-align: center;
   }
-  img {min-width: 80vw;}
+  img {min-width: 100vw;}
 }
+
 .text {
   position: relative;
-  animation: scrolling 50s linear;
+  animation: scrolling 60s linear;
+  justify-content: space-between;
+  min-width: 80vw;
 }
 
 @keyframes scrolling {
-  from {transform: translateY(0px) translateZ(0px) rotateX(15deg) scale(1)}
-  to {transform: translateY(-2500px) translateZ(-500px) rotateX(10deg) scale(1.1)};
+  from {transform: translateY(0px) translateZ(0px) rotateX(20deg) scale(2)}
+  to {transform: translateY(-7500px) translateZ(-2500px) rotateX(18deg) scale(2)};
 }
