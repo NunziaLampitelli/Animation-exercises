@@ -38,10 +38,13 @@ body {
 
 .text {
   position: relative;
+  min-width: 80vw;
+  position: relative;
   animation: scrolling 60s linear;
   justify-content: space-between;
   min-width: 80vw;
 }
+
 
 @keyframes scrolling {
   from {transform: translateY(0px) translateZ(0px) rotateX(20deg) scale(2)}
