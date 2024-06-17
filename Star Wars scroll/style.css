@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(33, 32, 32);
+  overflow: hidden;
+  font-family: 'Roboto', 'Arial', 'Verdana';
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: rgb(225, 199, 28);
+  margin: -100%, 0, 0, 0;
+}
+
+.container {
+  perspective: 450px;
+  margin-top: 100vh;
+  display: flex;
+  text-align: justify;
+  width: 60%;
+  height: 100%;
+  h1, .episode {
+    text-align: center;
+  }
+  img {min-width: 60vw;}
+}
+.text {
+  position: relative;
+  animation: scrolling 150s linear forwards;
+}
+
+@keyframes scrolling {
+  from {transform: translateY(0px)}
+  to {transform: translateY(-7500px)};
+}
